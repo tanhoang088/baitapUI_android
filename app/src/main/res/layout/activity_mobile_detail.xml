@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobileDetail.MobileDetail"
+    android:background="@color/background_color2">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Enter mobile details"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="297dp"
+        android:layout_height="25dp"
+        android:text="Phone"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" 
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="297dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:hint="   01xxxxxxxx"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="297dp"
+        android:layout_height="25dp"
+        android:text="Select your mobile operator"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Spinner
+        android:layout_width="297dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:entries="@array/spinnerItems"
+        android:id="@+id/spinner1"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:foregroundGravity="right|bottom"
+        app:borderWidth="0dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/background_color"
+        android:backgroundTint="@color/background_color"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

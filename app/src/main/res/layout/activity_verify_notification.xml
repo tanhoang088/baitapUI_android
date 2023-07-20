@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyNotification.VerifyNotification"
+    android:background="@color/background_color2">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Great, You're almost there"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:text="To complete your registration process, you will need to"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:layout_marginTop="100dp">
+
+        <TableRow>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:backgroundTint="@color/background_color" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take photos of your NID Card"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photograph both sides"
+                        android:textSize="10sp" />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:backgroundTint="@color/background_color"
+                android:layout_marginTop="10dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm basic information"
+                        android:textSize="20sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Majority of the information will be scanned in from you NID card"
+                        android:textSize="10sp"/>
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:backgroundTint="@color/background_color"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Take a photo of yourself"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

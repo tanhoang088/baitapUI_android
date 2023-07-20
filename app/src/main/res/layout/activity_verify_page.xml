@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPage.VerifyPage"
+    android:background="@color/background_color2">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Verify your number"
+        android:textColor="@color/background_color"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Enter OTP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="306dp"
+        android:layout_height="30dp"
+        android:hint="   ******"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Resend code? 30s"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:foregroundGravity="right|bottom"
+        app:borderWidth="0dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/background_color"
+        android:backgroundTint="@color/background_color"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
